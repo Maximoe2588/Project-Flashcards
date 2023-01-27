@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { createCard, updateCard } from "./utils/api/index";
 
-function CardForm({ deck, isEdit, card, deckId, setError }) {
+function CardForm({ deck, isEdit=false, card, deckId, setError }) {
   const history = useHistory();
-  const initialFormState = isEdit
-    ? card
-    : { front: "", back: "", deckId: deckId };
+  const initialFormState = isEdit ? card : { front: "", back: "", deckId: deckId };
 
   const [formData, setFormData] = useState(initialFormState);
 
@@ -26,7 +24,7 @@ function CardForm({ deck, isEdit, card, deckId, setError }) {
 
   const handleSubmitAdd = (event) => {
     event.preventDefault();
-    createCard(Number.parseInt(deck.id), formData).catch(setError);
+    createCard(deckId, formData).catch(setError);history.push(`/decks/${deckId}`);
   };
 
   useEffect(() => {
@@ -47,7 +45,7 @@ function CardForm({ deck, isEdit, card, deckId, setError }) {
             name="front"
             placeholder="Front side of card."
             rows={3}
-            value={formData.front}
+            value={formData?.front}
             onChange={handleChange}
           ></textarea>
         </div>
@@ -58,7 +56,7 @@ function CardForm({ deck, isEdit, card, deckId, setError }) {
             name="back"
             placeholder="Back side of card."
             rows={3}
-            value={formData.back}
+            value={formData?.back}
             onChange={handleChange}
           ></textarea>
         </div>

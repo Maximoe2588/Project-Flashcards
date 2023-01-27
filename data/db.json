@@ -30,7 +30,7 @@
       "id": 2
     },
     {
-      "front": "What does <Switch> do?",
+      "front": "What does <Switch> do?!",
       "back": "Renders the first matching child <Route> ",
       "deckId": 2,
       "id": 5
@@ -100,6 +100,42 @@
       "back": "23er4gt",
       "deckId": 4,
       "id": 19
+    },
+    {
+      "front": "Add Card New",
+      "back": "Back of New",
+      "deckId": 2,
+      "id": 20
+    },
+    {
+      "front": "Testing 9:25",
+      "back": "Testing 9:25",
+      "deckId": 2,
+      "id": 21
+    },
+    {
+      "front": "Testing 9:25",
+      "back": "Testing 9:25",
+      "deckId": 2,
+      "id": 22
+    },
+    {
+      "front": "Testing Again",
+      "back": "Testing Again",
+      "deckId": 2,
+      "id": 23
+    },
+    {
+      "front": "TEst",
+      "back": "TEst",
+      "deckId": null,
+      "id": 24
+    },
+    {
+      "front": "test",
+      "back": "test again",
+      "deckId": 2,
+      "id": 25
     }
   ]
 }

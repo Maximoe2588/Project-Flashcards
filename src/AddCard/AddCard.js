@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ErrorMessage from "../ErrorMessage";
-import AddCardForm from "./AddCardForm";
 import AddCardNavig from "./AddCardNavig";
+import CardForm from "../CardForm";
 import { readDeck } from "../utils/api/index"
 import { useParams } from "react-router-dom";
 
@@ -16,7 +16,7 @@ function AddCard(){
         const abortController = new AbortController();
         //readDeck(deck.id, abortController.signal).then(setDeck).catch(setError);
         readDeck(deckId, abortController.signal).then(setDeck).catch(setError);
-        return () => abortController.abort();}, [deck.id]);
+        return () => abortController.abort();}, [deckId]);
   
   if (error){
     return <ErrorMessage error={error} />
@@ -28,7 +28,7 @@ function AddCard(){
        return (
        <div>
           <AddCardNavig deck={deck}/>
-          <AddCardForm deck={deck} error={error} setError={setError} />
+          <CardForm deck={deck} error={error} setError={setError} deckId={deckId} />
        </div>
        );
      }
