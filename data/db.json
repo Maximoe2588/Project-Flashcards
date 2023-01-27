@@ -1,0 +1,81 @@
+{
+  "decks": [
+    {
+      "name": "Rendering in React",
+      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation.",
+      "id": 1
+    },
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    },
+    {
+      "name": "Test at 6:50 p.m.",
+      "description": "Test at 6:50 p.m.",
+      "id": 4
+    }
+  ],
+  "cards": [
+    {
+      "front": "GoodBye",
+      "back": "Good-Bye Again",
+      "deckId": 1,
+      "id": 1
+    },
+    {
+      "front": "How do you modify the state of a different React component?",
+      "back": "Not at all! State is visible to the component only.",
+      "deckId": 1,
+      "id": 2
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "Test Front",
+      "back": "Test Back",
+      "deckId": 1,
+      "id": 6
+    },
+    {
+      "front": "I just added this at 3:33 p.m.",
+      "back": "This is back of the just added at 3:33 p.m.",
+      "deckId": 2,
+      "id": 10
+    },
+    {
+      "front": "Hello",
+      "back": "Good-Bye",
+      "deckId": 1,
+      "id": 11
+    },
+    {
+      "front": "This is front of card 1",
+      "back": "This is back of card 1",
+      "deckId": 4,
+      "id": 12
+    },
+    {
+      "front": "This if front of card 2",
+      "back": "This if back of card 2",
+      "deckId": 4,
+      "id": 13
+    },
+    {
+      "front": "This if front of card 3",
+      "back": "This if back of card 3",
+      "deckId": 4,
+      "id": 14
+    },
+    {
+      "front": "This is front of card 4",
+      "back": "This if back of card 4",
+      "deckId": 4,
+      "id": 15
+    }
+  ]
+}
