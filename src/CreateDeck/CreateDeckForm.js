@@ -18,11 +18,7 @@ function CreateDeckForm(){
     setFormData({...formData, [target.name]: target.value});
   };
   
-  /*const handleSubmit = async (event) => {
-    event.preventDefault();
-   const id = await createDeck(formData);
-    console.log(id);
- }*/
+  
 
  const handleSubmit = async (event) => {
   event.preventDefault();

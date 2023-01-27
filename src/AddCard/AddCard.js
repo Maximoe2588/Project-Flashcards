@@ -14,7 +14,6 @@ function AddCard(){
   
   useEffect(() =>{
         const abortController = new AbortController();
-        //readDeck(deck.id, abortController.signal).then(setDeck).catch(setError);
         readDeck(deckId, abortController.signal).then(setDeck).catch(setError);
         return () => abortController.abort();}, [deckId]);
   

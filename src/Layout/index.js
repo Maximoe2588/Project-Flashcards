@@ -9,8 +9,7 @@ import CreateDeckPage from "../CreateDeck/CreateDeckPage";
 import DeckPageHome from "../DeckPage/DeckPageHome";
 import EditDeck from "../EditDeckPage/EditDeck";
 import EditCard from "../EditCardPage/EditCard";
-import AddCardNew from "../AddCard/AddCardNew";
-import EditCardNew from "../EditCardPage/EditCardNew";
+
 
 
 function Layout() {

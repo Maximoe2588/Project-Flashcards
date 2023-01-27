@@ -6,12 +6,6 @@ import { createCard } from "../utils/api";
 //Componenet will be the form for adding a new card to deck that already exists
 
 function AddCardForm({deck, error, setError, deckId}) {
-  //const [currentDeck, setCurrentDeck] = useState({...deck});
-   /*useEffect(() =>{
-        const abortController = new AbortController();
-        readDeck(deck.id, abortController.signal).then(setCurrentDeck).catch(setError);
-        return () => abortController.abort();}, [deck.id]);*/
-
   
 
   const initialFormState = { front: "", back: "", deckId: deck.id};

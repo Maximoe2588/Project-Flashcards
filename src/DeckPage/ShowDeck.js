@@ -10,11 +10,7 @@ function ShowDeck({deck}){
   const { url } = useRouteMatch();
   const history = useHistory();
   
-  /*const handleDelete = async (deckId) => {
-    if(window.confirm("Delete this deck?\n You will not be able to recover it.")){
-      await deleteDeck(deck.id);
-    }
-  }*/
+  
 
   const handleDelete = async (deckId) => {
     if(window.confirm("Delete this deck?\n You will not be able to recover it.")){
