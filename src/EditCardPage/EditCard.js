@@ -18,7 +18,7 @@ function EditCard(){
           readDeck(deckId, abortController.signal).then(setDeck).catch(setError);
           readCard(cardId, abortController.signal).then(setCard).catch(setError);
           return () => abortController.abort();
-            }, []);
+            }, [cardId, deckId]);
    
   if (error) {
   return <ErrorMessage error={error} />
