@@ -1,6 +1,6 @@
 # Project-Flashcards-Max
 
-###Flashcard-o-matic
+**Flashcard-o-matic**
 A powerful and intuitive flashcard application for students and teachers to enhance their online learning experience.
 
 ###Introduction
